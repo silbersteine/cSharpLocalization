@@ -12,6 +12,12 @@ class Program
         string lastName = LastName_Subroutine(); //Variable is improted from subroutine
         Salutations(firstName, lastName); //Function Salutations uses passed parameters to write a greeting to the user
         TemperatureCheck();
+        Goodbye(firstName, lastName);
+    }
+
+    static void Goodbye(string first, string last)
+    {
+        Console.WriteLine("Goodbye " + first + " " + last + ".");
     }
 
     //Function assigns first name to variable firstName for export to Main
