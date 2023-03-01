@@ -7,6 +7,7 @@ class Program
     static void Main()
     {
         InitialGreeting();
+        Console.ReadLine();
         string firstName = FirstName_Subroutine(); //Variable is imported from subroutine
         string lastName = LastName_Subroutine(); //Variable is improted from subroutine
         Salutations(firstName, lastName); //Function Salutations uses passed parameters to write a greeting to the user
@@ -18,6 +19,12 @@ class Program
     {
         Console.WriteLine("What is your first name?");
         string firstName = Console.ReadLine();
+        while (string.IsNullOrEmpty(firstName) ^ int.TryParse(firstName, out int value)) //While loop that checks to make sure input is not null and not an integer
+        {
+            Console.WriteLine("Try again! Write your name once more");
+            firstName = Console.ReadLine();
+        }
+
         return firstName;
     }
 
@@ -26,6 +33,11 @@ class Program
     {
         Console.WriteLine("What is your last name?");
         string lastName = Console.ReadLine();
+        while (string.IsNullOrEmpty(lastName) ^ int.TryParse(lastName, out int value)) //While loop that checks to make sure input is not null and not an integer
+        {
+            Console.WriteLine("Try again! Write your name once more");
+            lastName = Console.ReadLine();
+        }
         return lastName;
     }
 
@@ -75,22 +87,23 @@ class Program
 
     static void InitialGreeting()
     {
-        string[] greetings = { "Good Morning", "Good Afternoon", "Good Evening" };
+        string[] greetings = { "Good Morning.", "Good Afternoon.", "Good Evening." };
+        string enter = " Hit any key to continue.";
         DateTime localDate = DateTime.Now; //Gets users device's time
 
         //Determine the index of the appropriate greeting based on the current hour
         int hourIndex = Convert.ToInt32(localDate.ToString("HH")); //hour formatting set to 24 hour with double digits
         if (hourIndex > 5 && hourIndex < 12)
         {
-            Console.WriteLine(greetings[0]);
+            Console.WriteLine(greetings[0] + enter);
         }
             else if (hourIndex > 12 && hourIndex < 17)
         {
-            Console.WriteLine(greetings[1]);
+            Console.WriteLine(greetings[1] + enter);
         }
             else
         {
-            Console.WriteLine(greetings[2]);
+            Console.WriteLine(greetings[2] + enter);
         }
         return; 
     }
