@@ -6,11 +6,11 @@ class Program
     //Main calls all the other functions
     static void Main()
     {
+        InitialGreeting();
         string firstName = FirstName_Subroutine(); //Variable is imported from subroutine
         string lastName = LastName_Subroutine(); //Variable is improted from subroutine
         Salutations(firstName, lastName); //Function Salutations uses passed parameters to write a greeting to the user
-        //TemperatureCheck();
-
+        TemperatureCheck();
     }
 
     //Function assigns first name to variable firstName for export to Main
@@ -32,6 +32,7 @@ class Program
     //This is the subroutine for greeting the user. It passes two parameters through the function. Paramaters used in main are first and last name of user.
     static void Salutations(string alpha, string beta)
     {
+        //Console.WriteLine(localDate.ToString("t"));
         string output = "";
         output = "Hello " + alpha + " " + beta;
         Console.WriteLine(output);
@@ -71,12 +72,26 @@ class Program
             Console.WriteLine("I didn't want to do it anyay.");
         }
     }
-    
-    //Function converts the temperature from F to C and 
-    static void TemperatureConversion()
+
+    static void InitialGreeting()
     {
+        string[] greetings = { "Good Morning", "Good Afternoon", "Good Evening" };
+        DateTime localDate = DateTime.Now; //Gets users device's time
 
+        //Determine the index of the appropriate greeting based on the current hour
+        int hourIndex = Convert.ToInt32(localDate.ToString("HH")); //hour formatting set to 24 hour with double digits
+        if (hourIndex > 5 && hourIndex < 12)
+        {
+            Console.WriteLine(greetings[0]);
+        }
+            else if (hourIndex > 12 && hourIndex < 17)
+        {
+            Console.WriteLine(greetings[1]);
+        }
+            else
+        {
+            Console.WriteLine(greetings[2]);
+        }
+        return; 
     }
-
-
 }
