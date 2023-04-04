@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<xsd:schema xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="root">
+		<xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="metadata">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" use="required" type="xsd:string"/>
+							<xsd:attribute name="type" type="xsd:string"/>
+							<xsd:attribute name="mimetype" type="xsd:string"/>
+							<xsd:attribute ref="xml:space"/>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="assembly">
+						<xsd:complexType>
+							<xsd:attribute name="alias" type="xsd:string"/>
+							<xsd:attribute name="name" type="xsd:string"/>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+							<xsd:attribute ref="xml:space"/>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required"/>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="coldTemp" xml:space="preserve">
+		<value>¡Guau! ¡ {0} grados Fahrernheit! ¡¡¡Eso está helado!!!</value>
+	</data>
+	<data name="coolTemp" xml:space="preserve">
+		<value>De acuerdo, {0} grados Fahrernheit no es exactamente cálido. ¡No olvides un abrigo!</value>
+	</data>
+	<data name="currentTemp" xml:space="preserve">
+		<value>¿Cuál es la temperatura en Fahrenheit donde estás ahora mismo? ¡Rápido! ¡Es urgente!</value>
+	</data>
+	<data name="firstName" xml:space="preserve">
+		<value>¿Cuál es tu primer nombre?</value>
+	</data>
+	<data name="goodbye" xml:space="preserve">
+		<value>Adiós {0} {1}</value>
+	</data>
+	<data name="greetAfternoon" xml:space="preserve">
+		<value>Buenas tardes. Presiona cualquier tecla para continuar</value>
+	</data>
+	<data name="greetEvening" xml:space="preserve">
+		<value>Buenas noches. Presiona cualquier tecla para continuar</value>
+	</data>
+	<data name="greetMorning" xml:space="preserve">
+		<value>Buen día. Presiona cualquier tecla para continuar</value>
+	</data>
+	<data name="greeting" xml:space="preserve">
+		<value>Hola {0} {1}</value>
+	</data>
+	<data name="hotTemp" xml:space="preserve">
+		<value>¡¡¡DIOS MÍO!!! ¡ {0} grados Fahrernheit hace demasiado calor! ¡¡¡Quedate adentro!!!</value>
+	</data>
+	<data name="isoError0" xml:space="preserve">
+		<value>No escribiste nada. Intentar otra vez. Elija entre en-US, es-ES, fr-FR, de-DE.</value>
+	</data>
+	<data name="isoError1" xml:space="preserve">
+		<value>Buen intento pero te equivocaste. Intentar otra vez. Elija entre en-US, es-ES, fr-FR, de-DE.</value>
+	</data>
+	<data name="isoPrompt" xml:space="preserve">
+		<value>Seleccione un idioma escribiendo su código ISO. Elija entre en-US, es-ES, fr-FR, de-DE</value>
+	</data>
+	<data name="isoSuccess" xml:space="preserve">
+		<value>Has elegido {0} .</value>
+	</data>
+	<data name="lastName" xml:space="preserve">
+		<value>¿Cual es tu apellido?</value>
+	</data>
+	<data name="nameError" xml:space="preserve">
+		<value>¡Intentar otra vez! Escribe tu nombre una vez más</value>
+	</data>
+	<data name="reject" xml:space="preserve">
+		<value>Yo no quería hacerlo de todos modos.</value>
+	</data>
+	<data name="tempConv" xml:space="preserve">
+		<value>Las temperaturas no suenan tan extremas cuando se convierten a Celsius. ¿Quieres que convierta la temperatura a Celsius? Escriba S para SÍ y N para NO.</value>
+	</data>
+	<data name="tempConvResults" xml:space="preserve">
+		<value>{0} grados Fahreinheit = {1} grados Celsius</value>
+	</data>
+	<data name="tempNews" xml:space="preserve">
+		<value>Presiona ENTER para buenas noticias.</value>
+	</data>
+	<data name="warmTemp" xml:space="preserve">
+		<value>{0} grados Fahrernheit. Eso es bastante cálido. ¡No olvides tu protector solar!</value>
+	</data>
+</root>
