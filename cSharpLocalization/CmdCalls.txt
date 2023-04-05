@@ -3,3 +3,9 @@ lokalise2 file upload --project-id 43784719642c62e7a8db67.60898885 --token 72439
 
 --Download target resource files and unzip bundle to cSharpLocalization/LangResources/
 lokalise2 file download --project-id 43784719642c62e7a8db67.60898885 --token 72439dd7b4351377a6a3d143ea1cafe3931e81af --format resx --placeholder-format net --unzip-to cSharpLocalization --include-description --directory-prefix LangResources/
+
+--List keys for filename lang.resx
+lokalise2 key list --project-id 43784719642c62e7a8db67.60898885 --token 72439dd7b4351377a6a3d143ea1cafe3931e81af --filter-filenames lang.resx --filter-platforms other
+
+--Create language 
+lokalise2 language create --project-id 43784719642c62e7a8db67.60898885 --token 72439dd7b4351377a6a3d143ea1cafe3931e81af --lang-iso el_GR --custom-iso el-GR 
