@@ -3,7 +3,7 @@
 This repository is a C# program created for two homework assignments for the course of Software I18n and L10n at the Middlebury Institute of International Studies.
 The first assignment is to create a program and does not involve i18n or l10n. 
 
-#Assignment #1 criteria:#
+##Assignment #1 criteria:
 
 a Main() that calls all of the other functions
 a function that communicates to the user on-screen, asking for their first and last names and then passes that info back to Main.
@@ -17,7 +17,7 @@ a function that evaluates the user's temperature and has three or more messages 
 an improvement to the structure I go over in class that catches incorrect user entries.
 a function that checks the current time and adjusts the user greeting (above) accordingly (if we don't get this far, don't worry about this).
 
-#Assignment #2 Criteria#
+##Assignment #2 Criteria
 
 a Main() that calls all of the other functions
 a function that communicates to the user on-screen, asking for their first and last names and then passes that info back to Main.
