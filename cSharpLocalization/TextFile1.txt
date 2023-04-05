@@ -1,5 +1,0 @@
-﻿--Upload mono resource file lang.resx
-lokalise2 file upload --project-id 43784719642c62e7a8db67.60898885 --token 72439dd7b4351377a6a3d143ea1cafe3931e81af --convert-placeholders --file cSharpLocalization/LangResources/lang.resx --use-automations --lang-iso en-US --replace-modified
-
---Download target resource files and unzip bundle to cSharpLocalization/
-lokalise2 file download --project-id 43784719642c62e7a8db67.60898885 --token 72439dd7b4351377a6a3d143ea1cafe3931e81af --format resx --placeholder-format net --unzip-to cSharpLocalization --include-description --directory-prefix LangResources/
