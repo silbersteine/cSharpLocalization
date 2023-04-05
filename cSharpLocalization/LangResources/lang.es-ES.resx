@@ -67,6 +67,9 @@
 	<data name="currentTemp" xml:space="preserve">
 		<value>¿Cuál es la temperatura en Fahrenheit donde estás ahora mismo? ¡Rápido! ¡Es urgente!</value>
 	</data>
+	<data name="dateTime" xml:space="preserve">
+		<value>La fecha y hora en nuestra cultura recién seleccionada es {0} .</value>
+	</data>
 	<data name="firstName" xml:space="preserve">
 		<value>¿Cuál es tu primer nombre?</value>
 	</data>
@@ -89,13 +92,13 @@
 		<value>¡¡¡DIOS MÍO!!! ¡ {0} grados Fahrernheit hace demasiado calor! ¡¡¡Quedate adentro!!!</value>
 	</data>
 	<data name="isoError0" xml:space="preserve">
-		<value>No escribiste nada. Intentar otra vez. Elija entre en-US, es-ES, fr-FR, de-DE.</value>
+		<value>Sabía que renunciarías. ¡Endeble!</value>
 	</data>
 	<data name="isoError1" xml:space="preserve">
 		<value>Buen intento pero te equivocaste. Intentar otra vez. Elija entre en-US, es-ES, fr-FR, de-DE.</value>
 	</data>
 	<data name="isoPrompt" xml:space="preserve">
-		<value>Seleccione un idioma escribiendo su código ISO. Elija entre en-US, es-ES, fr-FR, de-DE</value>
+		<value>Seleccione un idioma escribiendo su código ISO o presione ENTER para salir. Elija entre en-US, es-ES, fr-FR, de-DE</value>
 	</data>
 	<data name="isoSuccess" xml:space="preserve">
 		<value>Has elegido {0} .</value>
@@ -110,7 +113,7 @@
 		<value>Yo no quería hacerlo de todos modos.</value>
 	</data>
 	<data name="tempConv" xml:space="preserve">
-		<value>Las temperaturas no suenan tan extremas cuando se convierten a Celsius. ¿Quieres que convierta la temperatura a Celsius? Escriba S para SÍ y N para NO.</value>
+		<value>Las temperaturas no suenan tan extremas cuando se convierten a Celsius. ¿Quieres que convierta la temperatura a Celsius? Escriba Y para SÍ y N para NO.</value>
 	</data>
 	<data name="tempConvResults" xml:space="preserve">
 		<value>{0} grados Fahreinheit = {1} grados Celsius</value>

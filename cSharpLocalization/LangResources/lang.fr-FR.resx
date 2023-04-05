@@ -67,6 +67,9 @@
 	<data name="currentTemp" xml:space="preserve">
 		<value>Quelle est la température en Fahrenheit où vous vous trouvez, en ce moment ? Rapide! C'est urgent!</value>
 	</data>
+	<data name="dateTime" xml:space="preserve">
+		<value>La date et l'heure dans notre nouvelle culture sélectionnée est {0} .</value>
+	</data>
 	<data name="firstName" xml:space="preserve">
 		<value>Quel est votre prénom?</value>
 	</data>
@@ -89,13 +92,13 @@
 		<value>OH MON DIEU!!! Il fait bien trop chaud à {0} degrés Fahrenheit ! Reste à l'intérieur!!!</value>
 	</data>
 	<data name="isoError0" xml:space="preserve">
-		<value>Vous n'avez rien écrit. Essayer à nouveau. Choisissez entre en-US, es-ES, fr-FR, de-DE.</value>
+		<value>Je savais que tu abandonnerais. Mauviette!</value>
 	</data>
 	<data name="isoError1" xml:space="preserve">
 		<value>Bien essayé mais tu t'es trompé. Essayer à nouveau. Choisissez entre en-US, es-ES, fr-FR, de-DE.</value>
 	</data>
 	<data name="isoPrompt" xml:space="preserve">
-		<value>Sélectionnez une langue en écrivant son code ISO. Choisissez entre en-US, es-ES, fr-FR, de-DE</value>
+		<value>Sélectionnez une langue en écrivant son code ISO ou appuyez sur ENTER pour quitter. Choisissez entre en-US, es-ES, fr-FR, de-DE</value>
 	</data>
 	<data name="isoSuccess" xml:space="preserve">
 		<value>Vous avez choisi {0} .</value>

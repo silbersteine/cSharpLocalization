@@ -12,14 +12,30 @@ class Program
         string firstName = FirstName_Subroutine(); //Variable is imported from subroutine
         string lastName = LastName_Subroutine(); //Variable is improted from subroutine
         Salutations(firstName, lastName); //Function Salutations uses passed parameters to write a greeting to the user
-        
-        //ISO code selected by user is stored in ISO variable and used to change UI and formatting cultures
-        string ISO = langSelector();
-        Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo(ISO);
-        Thread.CurrentThread.CurrentCulture = CultureInfo.GetCultureInfo(ISO);
-        getDateTime();
-        TemperatureCheck();
-        Goodbye(firstName, lastName);
+
+        Boolean flag = false;
+        //Start of While loop
+        while (!flag)
+        {
+            //ISO code selected by user is stored in ISO variable and used to change UI and formatting cultures
+            string ISO = langSelector();
+            if (ISO != "")
+            {
+                Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo(ISO);
+                Thread.CurrentThread.CurrentCulture = CultureInfo.GetCultureInfo(ISO);
+                getDateTime();
+                TemperatureCheck();    
+            }
+            else
+            {
+                Goodbye(firstName, lastName);
+                flag = true;
+            }
+            
+
+        }
+       
+    Console.ReadLine();
     }
 
     static void Goodbye(string first, string last)
@@ -127,26 +143,27 @@ class Program
         string response = Console.ReadLine();
         while (response != "es-ES" && response != "fr-FR" && response != "de-DE" && response != "en-US" && response != "")
         {
-            if (response == "")
-            {
-                Console.WriteLine(LangResources.lang.isoError0);
-                response = Console.ReadLine();
-            }
-            else
-            {
-                Console.WriteLine(LangResources.lang.isoError1);
-                response = Console.ReadLine();
-            }
+            Console.WriteLine(LangResources.lang.isoError1);
+            response = Console.ReadLine();
         }
+
+        if (response == "")
+        {
+            Console.WriteLine(LangResources.lang.isoError0);
+            return response;
+        }
+        else
+        {
             Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo(response);
             Thread.CurrentThread.CurrentCulture = CultureInfo.GetCultureInfo(response);
             Console.WriteLine(LangResources.lang.isoSuccess, response); //Excellente!
             return response;
+        }
     }
 
     static void getDateTime()
     {
         DateTime localDate = DateTime.Now;
-        Console.WriteLine(localDate.ToString("f", CultureInfo.CurrentCulture));
+        Console.WriteLine(LangResources.lang.dateTime, localDate.ToString("f", CultureInfo.CurrentCulture));
     }
 }

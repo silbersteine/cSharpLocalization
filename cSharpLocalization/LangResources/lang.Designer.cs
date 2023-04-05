@@ -88,6 +88,15 @@ namespace cSharpLocalization.LangResources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to The date and time in our newly selected culture is {0}..
+        /// </summary>
+        internal static string dateTime {
+            get {
+                return ResourceManager.GetString("dateTime", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to What is your first name?.
         /// </summary>
         internal static string firstName {
@@ -151,7 +160,7 @@ namespace cSharpLocalization.LangResources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to You didn&apos;t write anything. Try again. Choose from en-US, es-ES, fr-FR, de-DE..
+        ///   Looks up a localized string similar to I knew you&apos;d quit. Wimp!.
         /// </summary>
         internal static string isoError0 {
             get {
@@ -169,7 +178,7 @@ namespace cSharpLocalization.LangResources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Select a language by writing its ISO code. Choose from en-US, es-ES, fr-FR, de-DE.
+        ///   Looks up a localized string similar to Select a language by writing its ISO code or hit ENTER to quit. Choose from en-US, es-ES, fr-FR, de-DE.
         /// </summary>
         internal static string isoPrompt {
             get {
