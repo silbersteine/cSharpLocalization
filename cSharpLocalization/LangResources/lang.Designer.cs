@@ -79,7 +79,7 @@ namespace cSharpLocalization.LangResources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to What is the temperature in Fahrenheit where you&apos;re at, right now? Quick! It&apos;s urgent!.
+        ///   Looks up a localized string similar to Tell me the temperature in Fahrenheit where you&apos;re at, right now? Quick! It&apos;s urgent!.
         /// </summary>
         internal static string currentTemp {
             get {
@@ -196,7 +196,7 @@ namespace cSharpLocalization.LangResources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to What is your last name?.
+        ///   Looks up a localized string similar to Tell me your last name?.
         /// </summary>
         internal static string lastName {
             get {

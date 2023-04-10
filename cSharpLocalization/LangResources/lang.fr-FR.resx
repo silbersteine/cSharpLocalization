@@ -65,7 +65,7 @@
 		<value>D'accord, {0} degrés Fahrenheit ne sont pas exactement chauds. N'oubliez pas un manteau !</value>
 	</data>
 	<data name="currentTemp" xml:space="preserve">
-		<value>Quelle est la température en Fahrenheit où vous vous trouvez, en ce moment ? Rapide! C'est urgent!</value>
+		<value>Dis-moi la température en Fahrenheit où tu es, en ce moment ? Rapide! C'est urgent!</value>
 	</data>
 	<data name="dateTime" xml:space="preserve">
 		<value>La date et l'heure dans notre nouvelle culture sélectionnée est {0} .</value>
@@ -104,7 +104,7 @@
 		<value>Vous avez choisi {0} .</value>
 	</data>
 	<data name="lastName" xml:space="preserve">
-		<value>Quel est ton nom de famille?</value>
+		<value>Dites-moi votre nom de famille ?</value>
 	</data>
 	<data name="nameError" xml:space="preserve">
 		<value>Essayer à nouveau! Écrivez votre nom une fois de plus</value>
